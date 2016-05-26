@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('h3').on('dblclick', function(){
+        $(this).hide();
+   	 });
+    $('p').on('click', function(){
+    	$('#click').hide();
+   	 });
+});
+</script>
+</head>
+<body>
+<h3>Click and Double Click Demo</h3>
+<p id="click">If you click on me, I will disappear.</p>
+<p>You can't click me away!</p>
+<p>You can't click me away either!</p>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('input').keypress(function(){
+		$(this).hide();
+	});
+	$('#hover').mouseenter(function(){
+		$(this).fadeOut('slow')
+	});
+	$('#hover').mouseleave(function(){
+		$(this).fadeIn('slow')
+	});
+});
+</script>
+<style>
+#key
+{
+  background-color:red;
+  height:100px;
+  width:100px;
+  color:white;
+}
+#hover
+{
+  background-color:cyan;
+  height:100px;
+  width:100px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="key">
+<input type="text" size=5>Press any key inside the box to hide me </input>
+</div>
+<div id="hover">Hover over me to hide me</div>
+</body>
+</html>
