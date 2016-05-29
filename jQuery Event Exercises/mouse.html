@@ -5,13 +5,13 @@
 <script>
 $(document).ready(function(){
 	$('input').keypress(function(){
-		$(this).hide();
+		$("#key").hide();
 	});
-	$('#hover').mouseenter(function(){
-		$(this).fadeOut('slow')
-	});
-	$('#hover').mouseleave(function(){
-		$(this).fadeIn('slow')
+
+	$('#hover').hover(function(){
+		$(this).fadeTo('slow', 0);
+	},function(){
+		$(this).fadeTo('slow', 1);
 	});
 });
 </script>
