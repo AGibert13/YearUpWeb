@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.ancestors * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('span').parentsUntil('div').css({'color': 'blue'});
+});
+</script>
+</head>
+<body>
+
+<div class="ancestors">
+  <div style="width:500px;">div (great-great-grandparent)
+    <ul> ul 1 (great-grandparent)
+    <ul>ul 2 (grandparent)  
+      <li>li (direct parent)
+        <span>span</span>
+      </li>
+    </ul>  
+    </ul> 
+  </div>
+</div>
+
+</body>
+</html>
