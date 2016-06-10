@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script>
+var first = prompt("Enter the first name:");
+var second = prompt("Enter the second name:");
+var third = prompt("Enter the third name:");
+var compliment=" is amazing. :D ";
+alert(complimentGiver(first,second,third,compliment));
+function complimentGiver(first,second,third,compliment){
+	var firstCompliment= first + compliment;
+	var secondCompliment= second + compliment;
+	var thirdCompliment= third + compliment;
+	return firstCompliment + secondCompliment + thirdCompliment;
+};
+</script>
+</html>
