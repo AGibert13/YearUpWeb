@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		var numbers = [0, 23, 19, 7, 10, 14, 9, 30, 21, 5];
+		var largest = -1;
+
+		function forLoop(array) {
+ 		 for (var i = 0; i < array.length; i++) {
+ 		   var current = array[i];
+ 		   if (current > largest) {
+ 		     largest = current;
+ 		   }
+ 		 };
+ 		 return "The largest number is " + largest + ".";
+		};
+		console.log(forLoop(numbers))
+
+		function whileLoop(array) {
+ 		 while (i < length) {
+ 		 	var i = 0;
+ 		   var current = array[i];
+ 		   if (current > largest) {
+  		    largest = current;
+  		   };
+  		  i++;
+  		 }
+ 		 return "The largest number is " + largest + "."
+		}
+		console.log(whileLoop(numbers))
+	</script>
+</head>
+<body>
+
+</body>
+</html>
